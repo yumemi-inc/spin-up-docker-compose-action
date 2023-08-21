@@ -86,7 +86,7 @@ runs:
           ${{ inputs.cache-key }}-buildx-cache-
     - if: fromJson(inputs.bake)
       id: buildx
-      uses: docker/setup-buildx-action@v1
+      uses: docker/setup-buildx-action@v2
       with:
         version: ${{ inputs.buildx-version }}
         driver-opts: network=host
