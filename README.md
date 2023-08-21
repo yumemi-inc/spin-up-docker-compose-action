@@ -11,9 +11,9 @@ steps:
     - name: Checkout
       uses: actions/checkout@v3
     - name: Setup docker compose
-      uses: yu-ichiro/spin-up-docker-compose-action@v1
+      uses: yumemi-inc/spin-up-docker-compose-action@v1
       with:
-          file: compose.yml
+          file: compose.yaml
     # docker compose environment available below
 ```
 
